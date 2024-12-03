@@ -1,0 +1,43 @@
+body {
+   background-color: #f0f8ff;
+}
+
+header nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+nav .brand-wrapper {
+   display: inherit;
+}
+.brand-wrapper .menu-bar {
+   border: none;
+   background-color: transparent;
+   font-size: 18px;
+}
+.brand-wrapper .gmail-logo {
+   width: 70px;
+}
+
+nav label {
+  position: relative;  
+
+}
+nav label .fa-solid {
+   position: absolute;
+   width: 400px;
+   bottom: 4px;
+   margin-left: 15px;
+}
+nav label input {
+   width: 600px;
+   height: 60px;
+   padding-left: 40px;
+   background-color: #add8eb44;   
+   border: none; 
+   border-radius: 35px;
+}
+nav input::placeholder {
+   font-size: 20px;
+   margin: 0 0 0 10em;
+} 
