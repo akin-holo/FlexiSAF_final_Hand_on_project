@@ -8,6 +8,10 @@
    <link rel="icon" type="image/x-icon" href="https://github.com/akin-holo/image-preview/blob/main/logo.png?raw=true" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/regular.min.css" integrity="sha512-mWnSnCSy+/uyx3fBqLP9Qyq3fDnIolDxqjN/8kqv5Z6Lw3T02XC+X6MqHHbIwtdwT2K/KFstAT/a1EYrSuOTMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=archive" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -91,6 +95,16 @@
                <button><i class="fa-regular fa-file"></i> Draft</button>  
             </div>
 
+            <div style="width: inherit;">
+               <div style="width: inherit; margin: 20px 10px 0;">
+                  <button style="display: flex; justify-content: space-between; align-items: center;">
+                     <span style="font-size: 20px;">Labels</span>
+                     <i class="fa-solid fa-plus"></i>
+                  </button>
+                 
+               </div>
+            </div>
+
             <!-- <div>
                <input type="checkbox" id="toggle-checkbox">
                <label for="toggle-checkbox" id="toggle-button"></label>
@@ -127,6 +141,38 @@
 
       <div class="msg-display-area">
          <iframe name="inbox" src="mail/u/inbox.html"></iframe>
+      </div>
+
+      <div class="right-side-bar">
+         <div>
+            <button>
+               <img src="asset/icons/calendar.svg" alt="google calendar" width="30">
+            </button>
+         </div>
+         <div>
+            <button>
+               <img src="asset/icons/keep.svg" alt="keep" width="20"> 
+            </button>
+            
+         </div>
+         <div class="checked-task">
+            <button>
+               <svg height="25" viewBox="0 0 24 24" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M10,13.5857864 L15.2928932,8.29289322 L16.7071068,9.70710678 L10,16.4142136 L6.29289322,12.7071068 L7.70710678,11.2928932 L10,13.5857864 Z" fill-rule="evenodd"/></svg>
+            </button>
+            <!-- <i class="fa-regular fa-circle"></i>
+            <i class="fa-solid fa-check"></i> -->
+         </div>
+         <div>
+            <button>
+               <i class="fa-solid fa-user"></i>  
+            </button>
+         </div>
+         <div>
+            <button>
+               <i class="fa-solid fa-plus"></i>
+            </button>
+         </div>
+        
       </div>
 
          
