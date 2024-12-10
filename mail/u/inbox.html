@@ -33,11 +33,22 @@
       } 
       .primary-top-head {
          position: sticky;
+         display: flex;
          top: 0;
          height: 40px;
+         justify-content: space-between;
+         align-items: center;
          margin-bottom: 20px;
          border-top-left-radius: 20px;
          border-top-right-radius: 20px;
+      }
+      .primary-top-head .left-prop {
+         display: flex;
+         gap: 20px;
+      }
+      .left-prop div button {
+         background-color: transparent;
+         border: none;
       }
 
       .primary-heading {
@@ -128,19 +139,44 @@
 </head>
 <body>
    <main>
-      <div class="primary-inbox">
+      <div class="primary-inbox" id="primaryInbox">
          <div class="primary-top-head">
-            <div>
-               <label for="select">
-                  <select>
-                     <option value="All">All</option>
-                     <option value="All">None</option>
-                     <option value="All">Read</option>
-                     <option value="All">Unread</option>
-                     <option value="All">Starred</option>
-                     <option value="All">Unstarred</option>
-                  </select>
-               </label>
+            <div class="left-prop">
+               <div>
+                  <input type="checkbox">
+                  <label for="select">
+                     <select>
+                        <option value="All">All</option>
+                        <option value="All">None</option>
+                        <option value="All">Read</option>
+                        <option value="All">Unread</option>
+                        <option value="All">Starred</option>
+                        <option value="All">Unstarred</option>
+                     </select>
+                  </label>
+               </div>
+               
+
+               <div>
+                  <button class="refresh" aria-label="refresh"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+               </div>
+               
+               <div>
+                  <button><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="50" width="50"/><circle cx="128" cy="64" r="10"/><circle cx="128" cy="128" r="10"/><circle cx="128" cy="192" r="10"/></svg></button>
+               </div>
+            </div>
+
+            <div class="right-prop" style="display: flex; gap: 15px;">
+               <div class="counts" style="display: flex; gap: 5px;">
+                  <p>1-50</p>
+                  <p>of</p>
+                  <p>2000</p>
+               </div>
+
+               <div class="messages-row-navigation" style="display: flex; gap: 10px">
+                  <button style="border: none; background-color: transparent;" class="newer-messages" aria-label="newer message"><i class="fa-solid fa-angle-left"></i></button>
+                  <button style="border: none; background-color: transparent;" class="older-messages" aria-label="older message"><i class="fa-solid fa-angle-right"></i></button>
+               </div>
             </div>
          </div>
       
