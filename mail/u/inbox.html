@@ -46,6 +46,11 @@
          display: flex;
          gap: 20px;
       }
+      .left-prop .message-status {
+         width: 18px;
+         background-color: transparent;
+         border: none;
+      }
       .left-prop div button {
          background-color: transparent;
          border: none;
@@ -144,8 +149,8 @@
             <div class="left-prop">
                <div>
                   <input type="checkbox">
-                  <label for="select">
-                     <select>
+                  <label for="message-status">
+                     <select class="message-status">
                         <option value="All">All</option>
                         <option value="All">None</option>
                         <option value="All">Read</option>
@@ -162,11 +167,11 @@
                </div>
                
                <div>
-                  <button><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="50" width="50"/><circle cx="128" cy="64" r="10"/><circle cx="128" cy="128" r="10"/><circle cx="128" cy="192" r="10"/></svg></button>
+                  <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                </div>
             </div>
 
-            <div class="right-prop" style="display: flex; gap: 15px;">
+            <div class="right-prop" style="display: flex; align-items: center; gap: 15px;">
                <div class="counts" style="display: flex; gap: 5px;">
                   <p>1-50</p>
                   <p>of</p>
@@ -176,6 +181,17 @@
                <div class="messages-row-navigation" style="display: flex; gap: 10px">
                   <button style="border: none; background-color: transparent;" class="newer-messages" aria-label="newer message"><i class="fa-solid fa-angle-left"></i></button>
                   <button style="border: none; background-color: transparent;" class="older-messages" aria-label="older message"><i class="fa-solid fa-angle-right"></i></button>
+               </div>
+
+               <div class="keyboard" style="display: flex;">
+                  <button class="keyboard" style="background-color: transparent; border: none;"><i class="fa-solid fa-keyboard"></i></button>
+                  <select style="width: 20px; margin: 0; border: none;">
+                     <option ></option>
+                     <option>English</option>
+                     <option>English Dvorak</option>
+                     <option>En English</option>
+                     <option>Pen English</option>
+                  </select>
                </div>
             </div>
          </div>
