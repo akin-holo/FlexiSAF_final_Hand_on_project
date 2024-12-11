@@ -78,21 +78,22 @@
          <div class="compose-btn-wrapper">
             <button class="compose" id="compose"><i class="fa-solid fa-pen"></i> Compose</button>
          </div>
-         <section class="">
+         <section class="change-iframe-content-btn-wrapper">
             <div>
-               <button><i class="fa-solid fa-inbox"></i> Inbox</button>
+               <button data-value="inbox"><i class="fa-solid fa-inbox"></i>Inbox </button>
             </div>
             <div>
-               <button><i class="fa-regular fa-star"></i> Starred</button>
+               <button data-value="starred"><i class="fa-regular fa-star"></i>Starred 
+                  </button>
             </div>
             <div>
-               <button><i class="fa-regular fa-clock"></i> Snoozed</button>
+               <button data-value="snoozed"><i class="fa-regular fa-clock"></i> Snoozed</button>
             </div>
             <div>
-               <button><i class="fa-regular fa-paper-plane"></i> Sent</button>
+               <button data-value="sent"><i class="fa-regular fa-paper-plane"></i> Sent</button>
             </div>
             <div>
-               <button><i class="fa-regular fa-file"></i> Draft</button>  
+               <button data-value="drafts"><i class="fa-regular fa-file"></i> Draft</button>  
             </div>
 
             <div>
@@ -147,7 +148,7 @@
       </div>
 
       <div class="msg-display-area">
-         <iframe name="inbox" src="mail/u/inbox.html"></iframe>
+         <iframe name="inbox" src="mail/u/inbox.html" id="iframe"></iframe>
       </div>
 
       <div class="right-side-bar">
