@@ -126,7 +126,7 @@ button span {
    height: auto;
    text-align: justify;
    margin: 0;
-   transition: width 0.3s ease;
+   transition: width 0.3s ease; 
   
  }
  /* main .left-side-bar::-webkit-scrollbar-track {
@@ -199,7 +199,7 @@ main .msg-display-area {
    margin-left: 235px; 
    border-radius: 10px;
    /* overflow-y: scroll; */
-   transition: width 0.2s ease-in-out;
+   transition: margin-left 0.2s ease-in-out;
 
 }
 
@@ -223,7 +223,7 @@ iframe {
    margin-left: 15px;
    /* justify-content: center;
    align-items: center; */
-   gap: 4em;
+   gap: 2em;
 }
 .checked-task {
    position: relative;

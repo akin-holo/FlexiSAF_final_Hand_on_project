@@ -53,5 +53,5 @@ changeIframeButtons.forEach(button => {
       }
 
       // changeIframeButtons.style.backgroundColor = "blue";
-   })
-})
+   });
+});
