@@ -56,6 +56,39 @@
          border: none;
       }
 
+      /* right-prop. (The numbers of message, left and right arrow angle, keyboard etc) */
+      .right-prop {
+         display: flex; 
+         align-items: center; 
+         gap: 15px;
+      }
+      .counts {
+         display: flex; 
+         gap: 5px;
+      }
+      .messages-row-navigation {
+         display: flex; 
+         gap: 10px;
+      }
+      .messages-row-navigation .newer-messages,
+      .messages-row-navigation .older-messages {
+         background-color: transparent;
+         border: none;
+      }
+      .keyboard-wrapper {
+         display: flex;
+      }
+      .keyboard {
+         background-color: transparent; 
+         border: none;
+      }
+      .keyboard-wrapper select {
+         width: 20px; 
+         margin: 0; border: none;
+      }
+
+
+
       .primary-heading {
          display: flex;
          justify-content: stretch;
@@ -170,21 +203,21 @@
                </div>
             </div>
 
-            <div class="right-prop" style="display: flex; align-items: center; gap: 15px;">
-               <div class="counts" style="display: flex; gap: 5px;">
-                  <p>1-50</p>
+            <div class="right-prop">
+               <div class="counts">
+                  <p class="row-in-fifty">1-50</p>
                   <p>of</p>
-                  <p>2000</p>
+                  <p class="total-messages">2000</p>
                </div>
 
-               <div class="messages-row-navigation" style="display: flex; gap: 10px">
-                  <button style="border: none; background-color: transparent;" class="newer-messages" aria-label="newer message"><i class="fa-solid fa-angle-left"></i></button>
-                  <button style="border: none; background-color: transparent;" class="older-messages" aria-label="older message"><i class="fa-solid fa-angle-right"></i></button>
+               <div class="messages-row-navigation">
+                  <button class="newer-messages" aria-label="newer message"><i class="fa-solid fa-angle-left" disabled></i></button>
+                  <button class="older-messages" aria-label="older message"><i class="fa-solid fa-angle-right"></i></button>
                </div>
 
-               <div class="keyboard" style="display: flex;">
-                  <button class="keyboard" style="background-color: transparent; border: none;"><i class="fa-solid fa-keyboard"></i></button>
-                  <select style="width: 20px; margin: 0; border: none;">
+               <div class="keyboard-wrapper">
+                  <button class="keyboard"><i class="fa-solid fa-keyboard"></i></button>
+                  <select>
                      <option ></option>
                      <option>English</option>
                      <option>English Dvorak</option>
