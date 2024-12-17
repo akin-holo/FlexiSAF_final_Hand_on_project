@@ -74,12 +74,12 @@ body {
 
 
 /* Primary-heading. (Categories of inbox. i.e Primary, Social, Promotion etc) */
-.primary-heading {
+.inbox-type {
    display: flex;
    justify-content: stretch;
    border-bottom: 1px solid #f5f5f5;
 }
-.primary-button-wrapper {
+.inbox-type-button-wrapper {
    display: flex;
    justify-content: left;
    align-items: center;
@@ -88,7 +88,7 @@ body {
    padding: 25px 10px;
    /* background-color: #ff00ff; */
 }
-.primary-button-wrapper:hover {
+.inbox-type-button-wrapper:hover {
    background-color: #f5f5f5;
    cursor: pointer;
 }
