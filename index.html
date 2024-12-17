@@ -78,6 +78,7 @@
          <div class="compose-btn-wrapper">
             <button class="compose" id="compose"><i class="fa-solid fa-pen"></i> Compose</button>
          </div>
+
          <section class="change-iframe-content-btn-wrapper">
             <div>
                <button data-value="inbox"><i class="fa-solid fa-inbox"></i>Inbox </button>
@@ -96,20 +97,19 @@
                <button data-value="drafts"><i class="fa-regular fa-file"></i> Draft</button>  
             </div>
 
-            <div>
-               <button class="more-or-less" style="font-size: 14px; display: flex; flex-direction: column;">
-                  <span style="font-size: 12px;" id="more"> <i class="fa-solid fa-angle-down"></i> More</span>
-                  <span style="font-size: 12px;" id="less"> <i class="fa-solid fa-angle-up"></i> Less</span>
+            <div class="moreLess-btn-wrapper">
+               <button class="more-or-less-btn">
+                  <span class="more" id="more"> <i class="fa-solid fa-angle-down"></i> More</span>
+                  <span class="less" id="less"> <i class="fa-solid fa-angle-up"></i> Less</span>
                </button>
             </div>
 
-            <div style="width: inherit;">
-               <div style="width: inherit; margin: 20px 10px 0;">
-                  <button style="display: flex; justify-content: space-between; align-items: center;">
-                     <span style="font-size: 20px;">Labels</span>
+            <div class="lable-area">
+               <div class="label-btn-wrapper">
+                  <button class="label-btn">
+                     <span>Labels</span>
                      <i class="fa-solid fa-plus"></i>
                   </button>
-                 
                </div>
             </div>
 
@@ -193,12 +193,13 @@
          </div>
 
          <!-- Side bar panel -->
-         <!-- <div class="side-panel" style="display: block; width: 70px;">
-            <span>show side panel</span>
-            <button>side-panel</button>
-         </div> -->
+         <div class="side-panel" style="display: block; width: 70px; margin-top: 70px;">
+            <span class="btn-name" style="display: none;">Show side panel</span>
+            <button id="sidePanel"><i class="fa-solid fa-angle-right"></i></button>
+         </div>
       </div> 
    </main>
+   
 
    <script src="main.js"></script>
 </body>

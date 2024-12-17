@@ -1,0 +1,159 @@
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   
+
+} 
+.primary-inbox {
+   /* display: flex; */
+   width: 945px;
+   /* background-color: #ff00ff; */
+   /* justify-content: center;
+   align-items: center; */
+} 
+.primary-top-head {
+   position: sticky;
+   display: flex;
+   top: 0;
+   height: 40px;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+.primary-top-head .left-prop {
+   display: flex;
+   gap: 20px;
+}
+.left-prop .message-status {
+   width: 18px;
+   background-color: transparent;
+   border: none;
+}
+.left-prop div button {
+   background-color: transparent;
+   border: none;
+}
+
+/* right-prop. (The numbers of message, left and right arrow angle, keyboard etc) */
+.right-prop {
+   display: flex; 
+   align-items: center; 
+   gap: 15px;
+}
+.counts {
+   display: flex; 
+   gap: 5px;
+}
+.messages-row-navigation {
+   display: flex; 
+   gap: 10px;
+}
+.messages-row-navigation .newer-messages,
+.messages-row-navigation .older-messages {
+   background-color: transparent;
+   border: none;
+}
+.keyboard-wrapper {
+   display: flex;
+}
+.keyboard {
+   background-color: transparent; 
+   border: none;
+}
+.keyboard-wrapper select {
+   width: 20px; 
+   margin: 0; border: none;
+} /* right-prop */
+
+
+/* Primary-heading. (Categories of inbox. i.e Primary, Social, Promotion etc) */
+.primary-heading {
+   display: flex;
+   justify-content: stretch;
+   border-bottom: 1px solid #f5f5f5;
+}
+.primary-button-wrapper {
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   width: 250px;
+   /* height: 60px; */
+   padding: 25px 10px;
+   /* background-color: #ff00ff; */
+}
+.primary-button-wrapper:hover {
+   background-color: #f5f5f5;
+   cursor: pointer;
+}
+
+.msg-box {
+   background-color: transparent;
+   border: none;
+   font-size: 14px;
+}
+
+
+/* .wrapper-for-each-inbox-msg {
+   display: flex;
+} */
+.each-inbox-msg {
+   display: flex;
+   width: 97%;
+   height: 40px;
+   align-items: center;
+   margin-left: 11px;
+   border-top: 1px solid transparent;
+   border-right: 1px solid transparent;
+   border-bottom: 1px solid #f5f5f5;
+   border-left: 1px solid transparent;
+   border: 1px solid #f5f5f5;
+   gap: 20px;
+   cursor: pointer;
+
+}
+.each-inbox-msg:hover {
+   border: 1px solid #f5f5f5;
+   box-shadow: 1px 1px 2px 1px #c9c7c7;
+}
+
+.each-inbox-msg-email-header {
+   display: flex;
+   /* justify-content: space-evenly; */
+   align-items: center;
+   /* margin-left: 10px; */
+   gap: 30px;
+}
+
+.btn-icons-wrapper {
+   display: flex;
+   justify-content: space-around;
+   margin-left: 4em;
+   gap: 20px;
+   visibility: hidden;
+}
+
+ .each-inbox-msg:hover .btn-icons-wrapper {
+   visibility: visible;
+} 
+.unsubscribe {
+   display: block;
+   margin: auto;
+   height:fit-content;
+} 
+.btn-icon {
+   border: none;
+   padding: 15px;
+   background-color: transparent;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.btn-icon:hover {
+   background-color: #f5f5f5;
+}
