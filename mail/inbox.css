@@ -81,16 +81,18 @@ body {
 }
 .inbox-type-button-wrapper {
    display: flex;
-   justify-content: left;
-   align-items: center;
-   width: 250px;
-   /* height: 60px; */
-   padding: 25px 10px;
-   /* background-color: #ff00ff; */
+   width: 230px;
+   height: 60px; 
+   margin: 5px; 
+}
+.inbox-type-button-wrapper button {
+   width: inherit; 
+   height: inherit; 
+   text-align: justify;
+   cursor: pointer;
 }
 .inbox-type-button-wrapper:hover {
    background-color: #f5f5f5;
-   cursor: pointer;
 }
 
 .msg-box {
@@ -130,6 +132,11 @@ body {
    /* margin-left: 10px; */
    gap: 30px;
 }
+.each-inbox-msg-email-header div span {
+   background-color: #f5f5f5; 
+   padding: 5px; 
+   border-radius: 8px;
+}
 
 .btn-icons-wrapper {
    display: flex;
@@ -156,4 +163,12 @@ body {
 }
 .btn-icon:hover {
    background-color: #f5f5f5;
+}
+
+.promotion-inbox,
+.social,
+.update {
+   display: none;
+   align-items: center; 
+   gap: 20px;
 }

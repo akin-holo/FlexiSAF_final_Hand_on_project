@@ -77,6 +77,25 @@
       <div class="left-side-bar">
          <div class="compose-btn-wrapper">
             <button class="compose" id="compose"><i class="fa-solid fa-pen"></i> Compose</button>
+
+            <div class="compose-modal" id="composeModal">
+               <div class="modal-content">
+                  <button class="close-modal" id="closeModal">&times;</button>
+                  <h2>New Message</h2>
+                  <form id="composeForm">
+                     <label for="to">To:</label>
+                     <input type="email" id="to" placeholder="Recipient's email" required>
+                     
+                     <label for="subject">Subject:</label>
+                     <input type="text" id="subject" placeholder="Subject">
+            
+                     <label for="body">Message:</label>
+                     <textarea id="body" placeholder="Write your message here..." rows="10"></textarea>
+            
+                     <button type="submit">Send</button>
+                  </form>
+               </div>
+            </div>
          </div>
 
          <section class="change-iframe-content-btn-wrapper">
@@ -154,16 +173,16 @@
       <div class="right-side-bar">
          <div style="width: 50px;">
             <div class="calendar-wrapper">
-               <button class="calendar-btn">
+               <a class="calendar-btn" href="https://calendar.google.com/" target="_blank">
                   <img src="asset/icons/calendar.svg" alt="google calendar" width="30">
-               </button>
+               </a>
                <span class="rightSideBar-btn-name">Calendar</span>
             </div>
 
             <div class="keep-wrapper">
-               <button class="">
+               <a class="" href="https://calendar.google.com/" target="_blank">
                   <img src="asset/icons/keep.svg" alt="keep" width="20"> 
-               </button>
+               </a>
                <span class="rightSideBar-btn-name">Keep</span>
             </div>
 
@@ -185,9 +204,9 @@
             </div>
 
             <div style="margin-top: 40px;" class="add-ons-wrapper">
-               <button class="">
+               <a class="" href="https://workspace.google.com/u/0/marketplace/appfinder?host=gmail" target="_self">
                   <i class="fa-solid fa-plus"></i>
-               </button>
+               </a>
                <span class="rightSideBar-btn-name">Get add-ons</span>
             </div>
          </div>
@@ -202,5 +221,7 @@
    
 
    <script src="main.js"></script>
+   <script src="compose.js"></script>
+
 </body>
 </html>

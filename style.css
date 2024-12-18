@@ -265,7 +265,8 @@ iframe {
    /* border: 3px solid #0000ff; */
    font-size: 20px;
 }
-.right-side-bar button {
+.right-side-bar button,
+.right-side-bar a {
    padding: 5px;
    margin-top: 20px;
    background-color: transparent;
@@ -273,10 +274,12 @@ iframe {
    border-radius: 50%;
    cursor: pointer;
 }
-.right-side-bar button:hover {
+.right-side-bar button:hover,
+.right-side-bar a:hover {
    background-color: #e6e2e2;
 }
-.right-side-bar button:hover ~ .rightSideBar-btn-name {
+.right-side-bar button:hover ~ .rightSideBar-btn-name,
+.right-side-bar a:hover ~ .rightSideBar-btn-name {
    display: block;
    transition: 5s;
 }
@@ -291,4 +294,36 @@ iframe {
    border-radius: 5px;
    font-size: 13px;
    z-index: 5;
+}
+
+
+.compose-modal {
+   display: none; 
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: white;
+   border: 1px solid #ccc;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   z-index: 1000;
+   width: 400px;
+}
+
+.modal-content {
+   display: flex;
+   flex-direction: column;
+}
+
+.close-modal {
+   background: none;
+   border: none;
+   font-size: 1.5em;
+   cursor: pointer;
+   align-self: flex-end;
+}
+
+body.modal-active {
+   overflow: hidden; 
 }
