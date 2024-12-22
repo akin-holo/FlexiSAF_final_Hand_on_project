@@ -82,20 +82,34 @@
 
          <section class="change-iframe-content-btn-wrapper">
             <div>
-               <button data-value="inbox"><i class="fa-solid fa-inbox"></i>Inbox </button>
+               <button class="inboxBTN" data-value="inbox">
+                  <i class="fa-solid fa-inbox"></i>
+                  <span class="bttn-name" style="font-size: inherit;">Inbox</span>
+               </button>
             </div>
             <div>
-               <button data-value="starred"><i class="fa-regular fa-star"></i>Starred 
-                  </button>
+               <button class="starredBTN" data-value="starred">
+                  <i class="fa-regular fa-star"></i>
+                  <span class="bttn-name" style="font-size: inherit;"> Starred</span>
+               </button>
             </div>
             <div>
-               <button data-value="snoozed"><i class="fa-regular fa-clock"></i> Snoozed</button>
+               <button class="snoozedBTN" data-value="snoozed">
+                  <i class="fa-regular fa-clock"></i> 
+                  <span class="button-name" style="font-size: inherit;">Snoozed</span>
+               </button>
             </div>
             <div>
-               <button data-value="sent"><i class="fa-regular fa-paper-plane"></i> Sent</button>
+               <button data-value="sent">
+                  <i class="fa-regular fa-paper-plane"></i> 
+                  <span class="button-name" style="font-size: inherit;"> Sent</span>
+               </button>
             </div>
             <div>
-               <button data-value="drafts"><i class="fa-regular fa-file"></i> Draft</button>  
+               <button data-value="drafts">
+                  <i class="fa-regular fa-file"></i>
+                  <span class="button-name" style="font-size: inherit;">Draft</span>
+               </button>  
             </div>
 
             <div class="moreLess-btn-wrapper">
@@ -155,16 +169,16 @@
       <div class="right-side-bar">
          <div style="width: 50px;">
             <div class="calendar-wrapper">
-               <a class="calendar-btn" href="https://calendar.google.com/" target="_blank">
+               <button>
                   <img src="asset/icons/calendar.svg" alt="google calendar" width="30">
-               </a>
+               </button>
                <span class="rightSideBar-btn-name">Calendar</span>
             </div>
 
             <div class="keep-wrapper">
-               <a class="" href="https://calendar.google.com/" target="_blank">
+               <button>
                   <img src="asset/icons/keep.svg" alt="keep" width="20"> 
-               </a>
+               </button>
                <span class="rightSideBar-btn-name">Keep</span>
             </div>
 
@@ -186,9 +200,9 @@
             </div>
 
             <div style="margin-top: 40px;" class="add-ons-wrapper">
-               <a class="" href="https://workspace.google.com/u/0/marketplace/appfinder?host=gmail" target="_self">
+               <button class="">
                   <i class="fa-solid fa-plus"></i>
-               </a>
+               </button>
                <span class="rightSideBar-btn-name">Get add-ons</span>
             </div>
          </div>

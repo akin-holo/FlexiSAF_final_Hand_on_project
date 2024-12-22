@@ -6,6 +6,7 @@ menuBar.addEventListener("click", () => {
    
    let leftSideBar = document.querySelector(".left-side-bar");
    let messageDisplayArea = document.querySelector(".msg-display-area");
+
    // let rightSideBar = document.querySelector(".right-side-bar");
 
    if(menuBarClick === 1) {
@@ -28,6 +29,11 @@ menuBar.addEventListener("click", () => {
 const changeIframeButtons = document.querySelectorAll(".change-iframe-content-btn-wrapper button");
 const iframe = document.getElementById("iframe");
 
+let inboxBTN = document.querySelector(".inboxBTN");
+let starredBTN = document.querySelector(".starredBTN");
+let snoozedBTN = document.querySelector(".snoozedBTN");
+
+
 changeIframeButtons.forEach(button => {
    button.addEventListener("click", () => {
       const value = button.getAttribute("data-value");
@@ -36,6 +42,7 @@ changeIframeButtons.forEach(button => {
          case "inbox":
             iframe.src = "mail/u/inbox.html";
             break;
+
          case "starred":
             iframe.src = "mail/u/starred.html";
             break;
