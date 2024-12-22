@@ -74,9 +74,13 @@
    </header>
 
    <main>
+      <!--Compose, Inbox, Starred, Snoozed, Sent,etc-->
       <div class="left-side-bar">
          <div class="compose-btn-wrapper">
-            <button class="compose" id="compose"><i class="fa-solid fa-pen"></i> Compose</button>
+            <button class="compose" id="compose">
+               <i class="fa-solid fa-pen"></i> 
+               <span class="BTN-name" style="font-size: inherit;">Compose</span>
+            </button>
             <div id="formContainer" style="z-index: 100;"></div>
          </div>
 
@@ -84,45 +88,45 @@
             <div>
                <button class="inboxBTN" data-value="inbox">
                   <i class="fa-solid fa-inbox"></i>
-                  <span class="bttn-name" style="font-size: inherit;">Inbox</span>
+                  <span class="BTN-name" style="font-size: inherit;">Inbox</span>
                </button>
             </div>
             <div>
                <button class="starredBTN" data-value="starred">
                   <i class="fa-regular fa-star"></i>
-                  <span class="bttn-name" style="font-size: inherit;"> Starred</span>
+                  <span class="BTN-name" style="font-size: inherit;"> Starred</span>
                </button>
             </div>
             <div>
                <button class="snoozedBTN" data-value="snoozed">
                   <i class="fa-regular fa-clock"></i> 
-                  <span class="button-name" style="font-size: inherit;">Snoozed</span>
+                  <span class="BTN-name" style="font-size: inherit;">Snoozed</span>
                </button>
             </div>
             <div>
                <button data-value="sent">
                   <i class="fa-regular fa-paper-plane"></i> 
-                  <span class="button-name" style="font-size: inherit;"> Sent</span>
+                  <span class="BTN-name" style="font-size: inherit;"> Sent</span>
                </button>
             </div>
             <div>
                <button data-value="drafts">
                   <i class="fa-regular fa-file"></i>
-                  <span class="button-name" style="font-size: inherit;">Draft</span>
+                  <span class="BTN-name" style="font-size: inherit;">Draft</span>
                </button>  
             </div>
 
             <div class="moreLess-btn-wrapper">
                <button class="more-or-less-btn">
-                  <span class="more" id="more"> <i class="fa-solid fa-angle-down"></i> More</span>
-                  <span class="less" id="less" style="display: none;"> <i class="fa-solid fa-angle-up"></i> Less</span>
+                  <span class="BTN-name" id="more" style="font-size: inherit;"> <i class="fa-solid fa-angle-down"></i> More</span>
+                  <span class="BTN-name" id="less" style="display: none;"> <i class="fa-solid fa-angle-up"></i> Less</span>
                </button>
             </div>
 
             <div class="lable-area">
                <div class="label-btn-wrapper">
                   <button class="label-btn">
-                     <span>Labels</span>
+                     <span class="BTN-name">Labels</span>
                      <i class="fa-solid fa-plus"></i>
                   </button>
                </div>
@@ -160,7 +164,9 @@
                <button class="hidden"><i class="fa-solid fa-gear"></i> Manage labels</button>  
             </div> -->
          </section>
-      </div>
+      </div> 
+      <!--End of Compose, Inbox, Starred, Snoozed, Sent,etc-->
+
 
       <div class="msg-display-area">
          <iframe name="inbox" src="mail/u/inbox.html" id="iframe"></iframe>
@@ -217,7 +223,7 @@
    
 
    <script src="main.js"></script>
-   <script src="compose.js"></script>
+   <!-- <script src="compose.js"></script> -->
 
 </body>
 </html>

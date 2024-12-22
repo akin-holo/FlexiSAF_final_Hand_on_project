@@ -221,10 +221,10 @@ main .msg-display-area {
    right: 0;
    /* bottom: 0; */
    left: 0;
-   width: 77%;
+   width: 80%;
    height: 600px;
    background-color: #fff;
-   margin-left: 235px; 
+   margin-left: 250px; 
    border-radius: 10px;
    /* overflow-y: scroll; */
    transition: margin-left 0.2s ease-in-out;
@@ -249,7 +249,7 @@ iframe {
    flex-direction: column;
    text-align: center;
    margin-top: 20px;
-   margin-left: 15px;
+   margin-left: 5px;
    /* justify-content: center;
    align-items: center; */
    gap: 3em;
@@ -266,8 +266,7 @@ iframe {
    /* border: 3px solid #0000ff; */
    font-size: 20px;
 }
-.right-side-bar button,
-.right-side-bar a {
+.right-side-bar button {
    padding: 5px;
    margin-top: 20px;
    background-color: transparent;
@@ -275,8 +274,7 @@ iframe {
    border-radius: 50%;
    cursor: pointer;
 }
-.right-side-bar button:hover,
-.right-side-bar a:hover {
+.right-side-bar button:hover {
    background-color: #e6e2e2;
 }
 .right-side-bar button:hover ~ .rightSideBar-btn-name,

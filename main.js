@@ -6,20 +6,36 @@ menuBar.addEventListener("click", () => {
    
    let leftSideBar = document.querySelector(".left-side-bar");
    let messageDisplayArea = document.querySelector(".msg-display-area");
+   let hideBTNname = document.querySelectorAll("button .BTN-name");
 
    // let rightSideBar = document.querySelector(".right-side-bar");
 
    if(menuBarClick === 1) {
+      hideBTNname.forEach((btn) => {
+         btn.style.display = "none";
+      });
+
+      document.querySelector(".compose").style.width = "70px";
+
       leftSideBar.style.width = "70px";
       // rightSideBar.style.width = "10%"
-      messageDisplayArea.style.marginLeft = "67px";
+      messageDisplayArea.style.marginLeft = "80px";
       messageDisplayArea.style.width = "90%";
 
       menuBarClick = 0;
    } else {
+      hideBTNname.forEach((btn) => {
+         btn.style.display = "initial";
+      });
+
+      document.querySelector(".compose").style.width = "150px";
+
       leftSideBar.style.width = "10%";
-      messageDisplayArea.style.marginLeft = "235px";
-      messageDisplayArea.style.width = "77%";
+      messageDisplayArea.style.marginLeft = "250px";
+      messageDisplayArea.style.width = "80%";
+
+      document.getElementById("less").style.display = "none"; // hidding the less span
+
       menuBarClick = 1;
    }
 });
